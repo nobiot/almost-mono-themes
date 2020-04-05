@@ -109,7 +109,7 @@
       (link (:underline t))
 
       ;; mode line
-      (mode-line (:background ,weakest :foreground ,foreground :underline nil :overline t ))
+      (mode-line (:background ,background :foreground ,foreground :underline nil :overline t))
       (mode-line-inactive (:background ,background :foreground ,weaker :underline nil :overline t))
 
       ;; font lock
