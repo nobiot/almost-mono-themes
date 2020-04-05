@@ -103,7 +103,7 @@
       (region  (:background ,highlight  :foreground ,foreground))
       (show-paren-match (:background ,background :foreground ,success :bold t))
       (show-paren-mismatch (:background ,background :foreground ,warning :bold t))
-      (minibuffer-prompt (:weight bold :foreground ,foreground))
+      (minibuffer-prompt (:foreground ,foreground))
       (isearch (:background ,weak :foreground ,foreground :bold t))
       (lazy-highlight (:background ,weaker :foreground ,foreground))
       (link (:underline t))
@@ -111,6 +111,10 @@
       ;; mode line
       (mode-line (:background ,background :foreground ,foreground :underline nil :overline t))
       (mode-line-inactive (:background ,background :foreground ,weaker :underline nil :overline t))
+
+      ;; vertical-border and  window-divider
+      (vertical-border (:foreground ,background :background ,background))
+      ;;(window-divider (:inherit 'vertical-border))
 
       ;; font lock
       (font-lock-keyword-face (:bold t))
@@ -127,7 +131,7 @@
       (font-lock-doc-face (:inherit font-lock-comment-face))
       (line-number (:foreground ,weaker))
       (linum (:inherit line-number))
-      (vertical-border (:foreground ,weaker))
+
 
       ;; eshell
       (eshell-prompt (:foreground ,foreground :bold t))
