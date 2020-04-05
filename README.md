@@ -1,3 +1,6 @@
+
+This is an adapted clone of original 'almost-mono-themes` for Emacs located at https://github.com/cryon/almost-mono-themes.
+
 Almost mono themes
 ==================
 

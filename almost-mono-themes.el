@@ -1,6 +1,11 @@
 ;;; almost-mono-themes.el --- Almost monochromatic color themes -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2019, 2020 John Olsson
+;;
+;; Adaptation by nobiot <me@nobiot.com>
+;; <https://gitlab.com/nobiot>
+;; <https://github.com/nobiot>
+;;
 
 ;; Author: John Olsson <john@cryon.se>
 ;; Maintainer: John Olsson <john@cryon.se>
@@ -104,11 +109,8 @@
       (link (:underline t))
 
       ;; mode line
-      (mode-line (:box (:line-width -1 :color ,weaker)
-		       :background ,weakest :foreground ,foreground))
-
-      (mode-line-inactive (:box (:line-width -1 :color ,weaker)
-				:background ,background :foreground ,weaker))
+      (mode-line (:background ,weakest :foreground ,foreground :underline nil :overline t ))
+      (mode-line-inactive (:background ,background :foreground ,weaker :underline nil :overline t))
 
       ;; font lock
       (font-lock-keyword-face (:bold t))
